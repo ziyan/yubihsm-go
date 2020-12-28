@@ -94,14 +94,13 @@ func CreateSignDataEcdsaCommand(keyID uint16, data []byte) (*CommandMessage, err
 	return command, nil
 }
 
-func CreateSignDataPkcs1Command(keyID uint16, algorithm Algorithm, data []byte) (*CommandMessage, error) {
+func CreateSignDataPkcs1Command(keyID uint16, data []byte) (*CommandMessage, error) {
 	command := &CommandMessage{
 		CommandType: CommandTypeSignDataPkcs1,
 	}
 
 	payload := bytes.NewBuffer([]byte{})
 	binary.Write(payload, binary.BigEndian, keyID)
-	binary.Write(payload, binary.BigEndian, algorithm)
 	payload.Write(data)
 
 	command.Data = payload.Bytes()

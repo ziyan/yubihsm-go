@@ -85,55 +85,6 @@ const (
 	AlgorithmYubicoAESAuthentication Algorithm = 38
 	AlgorighmED25519                 Algorithm = 46
 
-	// Copied from lib/yubihsm.h
-	AlgorithmRsaPkcs1Sha1               Algorithm = 1  /// rsa-pkcs1-sha1
-	AlgorithmRsaPkcs1Sha256             Algorithm = 2  /// rsa-pkcs1-sha256
-	AlgorithmRsaPkcs1Sha384             Algorithm = 3  /// rsa-pkcs1-sha384
-	AlgorithmRsaPkcs1Sha512             Algorithm = 4  /// rsa-pkcs1-sha512
-	AlgorithmRsaPssSha1                 Algorithm = 5  /// rsa-pss-sha1
-	AlgorithmRsaPssSha256               Algorithm = 6  /// rsa-pss-sha256
-	AlgorithmRsaPssSha384               Algorithm = 7  /// rsa-pss-sha384
-	AlgorithmRsaPssSha512               Algorithm = 8  /// rsa-pss-sha512
-	AlgorithmRsa2048                    Algorithm = 9  /// rsa2048
-	AlgorithmRsa3072                    Algorithm = 10 /// rsa3072
-	AlgorithmRsa4096                    Algorithm = 11 /// rsa4096
-	AlgorithmEcP256                     Algorithm = 12 /// ecp256
-	AlgorithmEcP384                     Algorithm = 13 /// ecp384
-	AlgorithmEcP521                     Algorithm = 14 /// ecp521
-	AlgorithmEcK256                     Algorithm = 15 /// eck256
-	AlgorithmEcBp256                    Algorithm = 16 /// ecbp256
-	AlgorithmEcBp384                    Algorithm = 17 /// ecbp384
-	AlgorithmEcBp512                    Algorithm = 18 /// ecbp512
-	AlgorithmHmacSha1                   Algorithm = 19 /// hmac-sha1
-	AlgorithmHmacSha256                 Algorithm = 20 /// hmac-sha256
-	AlgorithmHmacSha384                 Algorithm = 21 /// hmac-sha384
-	AlgorithmHmacSha512                 Algorithm = 22 /// hmac-sha512
-	AlgorithmEcEcdsaSha1                Algorithm = 23 /// ecdsa-sha1
-	AlgorithmEcEcdh                     Algorithm = 24 /// ecdh
-	AlgorithmRsaOaepSha1                Algorithm = 25 /// rsa-oaep-sha1
-	AlgorithmRsaOaepSha256              Algorithm = 26 /// rsa-oaep-sha256
-	AlgorithmRsaOaepSha384              Algorithm = 27 /// rsa-oaep-sha384
-	AlgorithmRsaOaepSha512              Algorithm = 28 /// rsa-oaep-sha512
-	AlgorithmAes128CcmWrap              Algorithm = 29 /// aes128-ccm-wrap
-	AlgorithmOpaqueData                 Algorithm = 30 /// opaque-data
-	AlgorithmOpaqueX509Certificate      Algorithm = 31 /// opaque-x509-certificate
-	AlgorithmMgf1Sha1                   Algorithm = 32 /// mgf1-sha1
-	AlgorithmMgf1Sha256                 Algorithm = 33 /// mgf1-sha256
-	AlgorithmMgf1Sha384                 Algorithm = 34 /// mgf1-sha384
-	AlgorithmMgf1Sha512                 Algorithm = 35 /// mgf1-sha512
-	AlgorithmTemplateSsh                Algorithm = 36 /// template-ssh
-	AlgorithmAes128YubicoOtp            Algorithm = 37 /// aes128-yubico-otp
-	AlgorithmAes128YubicoAuthentication Algorithm = 38 /// aes128-yubico-authentication
-	AlgorithmAes192YubicoOtp            Algorithm = 39 /// aes192-yubico-otp
-	AlgorithmAes256YubicoOtp            Algorithm = 40 /// aes256-yubico-otp
-	AlgorithmAes192CcmWrap              Algorithm = 41 /// aes192-ccm-wrap
-	AlgorithmAes256CcmWrap              Algorithm = 42 /// aes256-ccm-wrap
-	AlgorithmEcEcdsaSha256              Algorithm = 43 /// ecdsa-sha256
-	AlgorithmEcEcdsaSha384              Algorithm = 44 /// ecdsa-sha384
-	AlgorithmEcEcdsaSha512              Algorithm = 45 /// ecdsa-sha512
-	AlgorithmEcEd25519                  Algorithm = 46 /// ed25519
-	AlgorithmEcP224                     Algorithm = 47 /// ecp224
-
 	// Capabilities
 	CapabilityGetOpaque             uint64 = 0x0000000000000001
 	CapabilityPutOpaque             uint64 = 0x0000000000000002
